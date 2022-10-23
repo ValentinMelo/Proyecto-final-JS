@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="top-navegador">
+        <div class="topnav">
+            <a href="index.html" class="titulo">PréstamosYa!</a>
+            <ul class="menu-principal">
+                <li><a href="/index.html#contenedor-flip">Bases</a></li>
+                <li><a href="/index.html#calculadora">Simulador</a></li>
+                <li><a href="">Por qué nosotros?</a></li>
+                <li><a href="">Testimonios</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="slider-wrapper">
+        <button class="slide-flecha" id="slide-flecha-prev">
+          &#8249;
+        </button>
+        <button class="slide-flecha" id="slide-flecha-sig">
+          &#8250;
+        </button>
+        <ul class="slides-contenedor" id="slides-contenedor">
+          <li class="slide"><img src="../imagenes/finanzas3.jpg" alt=""></li>
+          <li class="slide"><img src="../imagenes/finanzas4.jpg" alt=""></li>
+        </ul>
+    </section>
+    
+
+    <div class="contenedor-flip">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Bases</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h2>Bases</h2>
+                    <p>Aquí en nuestro banco pensamos en nuestros clientes y en sus finanzas, por lo que creamos una nueva línea de crédito para que puedas consumir aquello que más te gusta sin descuidar tu bolsillo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2 class="requisitos">Requisitos</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h2>Requisitos</h2>
+                    <p id="parrafoRequisitos">Te otorgaremos un préstamo de hasta 5.000 USD, el cual podrás pagar en 1 a 12 cuotas. En caso que lo pidas en 6 o menos cuotas te ofreceremos una tasa de interés fija del 2% mensual sobre la cuota, y si deseas pagarlo en más de 6 cuotas, te ofreceremos una tasa de interés fija del 5% mensual sobre la cuota.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Además</h2>
+                </div>
+                <div class="flip-card-back">
+                    <h2>Además...</h2>
+                    <p>Además, si lo deseas, una vez aprobado el primer préstamo y teniendo ingresos superiores al capital máximo (5.000 USD), te ofreceremos otro con iguales tasas y un monto equivalente al capital máximo (5.000 USD) menos el capital otorgado en el primer préstamo. En caso que tus ingresos sean menores al capital máximo (5.000 USD) el monto del segundo préstamo será equivalente al 50% de la diferencia entre tus ingresos y el monto del primer préstamo aprobado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="divSaludo"></div>
+    <div id="divPrestamo"></div>
+
+
+
+    <form id="calculadora">
+        <h2 id="tituloCalculadora">Calculadora</h2>
+        <div class="form">
+            <div class="form-input">
+                <input type="text" class="form-control" id="nombre" placeholder="Por favor ingresa tu nombre">
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-input">
+                <input type="text" class="form-control" id="apellido" placeholder="Por favor ingresa tu apellido">
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-input">
+                <input type="number" class="form-control" id="monto" placeholder="Ingresa el monto a pedir (máximo 5.000 USD)" min="1" max="5000">
+            </div>
+        </div>
+        <div class="form">  
+            <div class="form-input">
+                <input type="number" class="form-control" id="cuotas" placeholder="Ingresa la cantidad de cuotas a pagar" min="1" max="12">
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-input">
+                <input type="number" class="form-control" id="ingresos" placeholder="Ingresa tus ingresos netos mensuales en USD">
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-input">
+                <input type="submit" class="form-control" id="boton" value="Calcular">
+            </div>
+        </div>
+    </form>
+   
+    <hr>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
